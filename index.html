@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task Manager</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+		
+	<!--NAVEGACIÓN -->	
+	<nav>
+		<div class="container">
+			<a href="">Home</a>
+		</div>
+	</nav>
+
+	<!-- PRINCIPAL -->
+	<div class="container p-3">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<form id="form">
+								<div class="form-group">
+									<input class="form-control" type="text" id="toDo" placeholder="TO DO" required>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" name="Description" id="description" cols="30" rows="10" placeholder="Add a description" required></textarea>
+								</div>
+								<div class="form-group">
+									<input class="btn btn-primary btn-block" type="submit" value="Send">
+								</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<!-- CONTENEDOR DE LAS TAREAS/NOTAS -->
+		<div class="col-md-8">
+			<div id="task"></div>
+		</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
